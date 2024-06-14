@@ -2851,6 +2851,10 @@ static const TypeIndexLookup c_TypeIndexLookup[] = {
 
     TIL("nanoFramework.Hardware.Esp32.Rmt", "RmtCommand", m_RmtCommand),
 
+    TIL("nanoFramework.Espnow", "DataSentEventInternal", m_EspNowDataSentEvent),
+    TIL("nanoFramework.Espnow", "DataRecvEventInternal", m_EspNowDataRecvEvent),
+
+
 #undef TIL
 };
 

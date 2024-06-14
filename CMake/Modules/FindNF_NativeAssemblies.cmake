@@ -40,6 +40,7 @@ option(API_nanoFramework.System.Security.Cryptography   "option for nanoFramewor
 option(API_Hardware.Esp32                               "option for Hardware.Esp32")
 option(API_nanoFramework.Hardware.Esp32.Rmt             "option for nanoFramework.Hardware.Esp32.Rmt")
 option(API_nanoFramework.Networking.Thread              "option for nanoFramework.Networking.Thread API")
+option(API_nanoFramework.Espnow                         "option for nanoFramework.Espnow")
 
 # Stm32 only
 option(API_Hardware.Stm32                               "option for Hardware.Stm32")
@@ -195,6 +196,12 @@ endif()
 if(API_nanoFramework.Networking.Thread)
     ##### API name here (doted name)
     PerformSettingsForApiEntry("nanoFramework.Networking.Thread")
+endif()
+
+# nanoFramework.Espnow
+if(API_nanoFramework.Espnow)
+    ##### API name here (doted name)
+    PerformSettingsForApiEntry("nanoFramework.Espnow")
 endif()
 
 # nanoFramework.Device.Bluetooth
